@@ -8,5 +8,6 @@ namespace Common.Models
 {
     public class ConsentRequest
     {
+        public string Customer { get; set; }
     }
 }

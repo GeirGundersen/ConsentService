@@ -60,7 +60,8 @@ namespace Common
                         pi.SetValue(customer, parts[i]);
                     else if (pi.PropertyType == typeof(DateTime))
                         pi.SetValue(customer, ConvertDate(parts[i]));
-
+                    else if (pi.PropertyType == typeof(bool))
+                        pi.SetValue(customer, parts[i] == "Y");
                 }
 
                 yield return customer;

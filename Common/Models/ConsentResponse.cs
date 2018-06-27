@@ -8,5 +8,10 @@ namespace Common.Models
 {
     public class ConsentResponse
     {
+        public string Bank { get; set; }
+
+        public string Customer { get; set; }
+
+        public bool Consent { get; set; }
     }
 }
